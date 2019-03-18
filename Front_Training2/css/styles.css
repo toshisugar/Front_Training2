@@ -22,7 +22,12 @@ header .container {
     width: 820px;
     margin: 0 auto;
     padding: 60px;
-    /* background-color: pink; */
+    position: relative;    /* 相対位置を指定。div要素の左上が基準となる */
+}
+header img {
+    position: absolute;    /* 絶対位置を指定。親要素の上が基準となる */
+    bottom: 0;
+    right: 0;
 }
 .btn {
     display: inline-block;
